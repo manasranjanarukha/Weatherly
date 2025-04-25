@@ -1,0 +1,211 @@
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+body {
+  width: 100% !important;
+  background-color: #f0f8ff !important; /* Light blue shade */
+  color: #333 !important; /* Dark text for contrast */
+  font-family: Arial, sans-serif !important;
+  background: url("https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHdlYXRoZXJ8ZW58MHx8fHwxNjg5NTY1NzA3&ixlib=rb-4.0.3&q=80&w=1080")
+    no-repeat center center fixed !important;
+  background-size: cover !important;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+.container {
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 20px !important;
+  padding: 20px !important;
+}
+.searchDetails {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  width: 500px !important;
+  height: 110px !important;
+  border-radius: 20px !important;
+  padding: 20px !important;
+  background: linear-gradient(145deg, rgb(0, 200, 255), #b75fff) !important;
+  gap: 5px !important;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.searchBar {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  height: 40px !important;
+  gap: 10px !important;
+}
+.searchBar input {
+  width: 100% !important;
+  height: 100% !important;
+  border: none !important;
+  border-radius: 5px !important;
+  padding: 10px !important;
+  font-size: 16px !important;
+}
+
+.searchBar button {
+  background-color: #b9c5b9 !important; /* Green background */
+  color: #fff !important; /* White text */
+  border: none !important;
+  border-radius: 5px !important;
+  padding: 8px 15px !important;
+  cursor: pointer !important;
+  font-size: 16px !important;
+  font-size: 20px !important;
+  border-radius: 10px !important;
+}
+
+.wDetails {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  width: 500px !important;
+  height: 350px !important;
+  border-radius: 20px !important;
+  padding: 20px 15px !important;
+  background: linear-gradient(145deg, rgb(0, 200, 255), #b75fff) !important;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.wDetails h1 {
+  color: white !important;
+  font-size: 24px !important;
+  margin-bottom: 10px !important;
+}
+.wDetails .row {
+  display: flex !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+  margin-bottom: 10px !important;
+}
+.wDetails .row .div-1 {
+  color: white !important;
+  width: auto !important;
+  min-width: 50% !important;
+  max-width: 50% !important;
+  border-right: 2px solid white !important;
+}
+.wDetails .row .div-1 p {
+  font-size: 17px !important;
+}
+.wDetails .row .div-1 h1 {
+  font-size: 20px !important;
+  margin-bottom: 20px !important;
+  margin-top: 30px !important;
+  font-weight: 700 !important;
+}
+.wDetails .row .div-1 h2 {
+  font-weight: 700 !important;
+  font-size: 25px !important;
+  margin-bottom: 5px !important;
+}
+.wDetails .row .div-2 {
+  width: 50% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.recentSearches {
+  display: flex !important;
+  gap: 10px !important;
+  cursor: pointer !important;
+}
+
+.recentSearches .recentSearchButton {
+  border-radius: 5px;
+  background-color: #fff !important;
+  padding: 0.05px 3px !important;
+}
+.recentSearches .recentSearchButton button {
+  padding: 3px 3px !important;
+  color: black !important;
+  border: none !important;
+  font-size: medium !important;
+}
+.recentSearches .recentSearchButton:hover {
+  /* background-color: black !important;
+  color: #fff !important;  */
+  transform: scale(1.05) !important;
+  transition: all 0.3s ease-in-out !important;
+}
+.recentSearches .recentSearchButton:hover button {
+  /* background-color: black !important;
+  color: white !important; */
+  transition: all 0.3s ease-in-out !important;
+}
+
+@media (max-width: 800px) {
+  .container {
+    width: 100% !important;
+  }
+  .searchDetails {
+    width: 90vw !important;
+    margin: 0 !important;
+  }
+  .wDetails {
+    width: 90vw !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center;
+
+    border-radius: 20px !important;
+    padding: 0;
+    background: linear-gradient(145deg, rgb(0, 200, 255), #b75fff) !important;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  }
+  .wDetails h1 {
+    color: white !important;
+    font-size: 24px !important;
+    margin-bottom: 10px !important;
+  }
+  .wDetails .row {
+    display: flex !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    margin-bottom: 10px !important;
+  }
+  .wDetails .row .div-1 {
+    color: white !important;
+    width: auto !important;
+    min-width: 50% !important;
+    max-width: 50% !important;
+    border-right: 2px solid white !important;
+  }
+  .wDetails .row .div-1 p {
+    font-size: 17px !important;
+  }
+  .wDetails .row .div-1 h1 {
+    font-size: 20px !important;
+    margin-bottom: 20px !important;
+    margin-top: 30px !important;
+    font-weight: 700 !important;
+  }
+  .wDetails .row .div-1 h2 {
+    font-weight: 700 !important;
+    font-size: 25px !important;
+    margin-bottom: 5px !important;
+  }
+  .wDetails .row .div-2 {
+    width: 50% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .recentSearches .recentSearchButton {
+    margin-top: 5px !important;
+    font-size: 1em;
+  }
+}
