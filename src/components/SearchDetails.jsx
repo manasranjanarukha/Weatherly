@@ -34,12 +34,15 @@ function SearchDetails({ searchElement, fetchWeather, recentSearches }) {
           {recentSearches.map((search, index) => (
             <div key={index} className="recentSearchButton">
               <MdHistory></MdHistory>
-
               <button
                 className="recentSearchNameButton"
                 onClick={() => fetchWeather(search)}
               >
-                {search}
+                <p>
+                  {" "}
+                  {search}
+                  {/* {search} */}
+                </p>
               </button>
             </div>
           ))}
